@@ -1,0 +1,15 @@
+{
+  "name": "node-demo",
+  "version": "1.0.0",
+  "description": "I integration of node project with Heroku and travis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "node index.js"
+  },
+  "author": "Manabjyoti Sarma",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
