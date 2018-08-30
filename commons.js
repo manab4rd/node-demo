@@ -1,6 +1,6 @@
 const path = require('path')
 const fs = require('fs')
-const fr = require('../')
+const fr = require('./')
 
 exports.fr = fr
 

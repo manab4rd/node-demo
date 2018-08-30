@@ -3,9 +3,9 @@ const app = express()
 let port = process.env.PORT || 80;
 app.get('/', (req, res) => res.send('Hello World!'))
 
-app.detect('/detect/, detectFaces());
+app.get('/detect/', detectFaces);
 
-function detectFaces(){
+function detectFaces(req, res){
 	const path = require('path')
 	const fs = require('fs')
 	const {
@@ -80,6 +80,8 @@ function detectFaces(){
 	})
 	console.log('result:')
 	console.log(result)
+
+	res.send("detect");
 
 }
 
